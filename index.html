@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>React Manual Import</title>
+		<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/index.css">
+	</head>
+	<body>
+
+		<main id="app" class="app">
+      <ul class="palette">
+        <li class="swatch" style="background-color: rgb(255, 0, 0);">
+          <span>rgb(</span>
+          <div class="channel">
+            <button type="button" class="btn up">+</button>
+            <input type="text" class="txt" value="255">
+            <button type="button" class="btn down">-</button>
+          </div>
+          <div class="channel">
+            <button type="button" class="btn up">+</button>
+            <input type="text" class="txt" value="0">
+            <button type="button" class="btn down">-</button>
+          </div>
+          <div class="channel">
+            <button type="button" class="btn up">+</button>
+            <input type="text" class="txt" value="0">
+            <button type="button" class="btn down">-</button>
+          </div>
+          <span>);</span>
+				</li>
+				<li class="swatch" style="background-color: rgb(0, 255, 0);">
+          <span>rgb(</span>
+          <div class="channel">
+            <button type="button" class="btn up">+</button>
+            <input type="text" class="txt" value="0">
+            <button type="button" class="btn down">-</button>
+          </div>
+          <div class="channel">
+            <button type="button" class="btn up">+</button>
+            <input type="text" class="txt" value="255">
+            <button type="button" class="btn down">-</button>
+          </div>
+          <div class="channel">
+            <button type="button" class="btn up">+</button>
+            <input type="text" class="txt" value="0">
+            <button type="button" class="btn down">-</button>
+          </div>
+          <span>);</span>
+				</li>
+				<li class="swatch" style="background-color: rgb(0, 0, 255);">
+          <span>rgb(</span>
+          <div class="channel">
+            <button type="button" class="btn up">+</button>
+            <input type="text" class="txt" value="0">
+            <button type="button" class="btn down">-</button>
+          </div>
+          <div class="channel">
+            <button type="button" class="btn up">+</button>
+            <input type="text" class="txt" value="0">
+            <button type="button" class="btn down">-</button>
+          </div>
+          <div class="channel">
+            <button type="button" class="btn up">+</button>
+            <input type="text" class="txt" value="255">
+            <button type="button" class="btn down">-</button>
+          </div>
+          <span>);</span>
+        </li>
+			</ul>
+    </main>
+
+
+		<!-- Load up Babel, React, and React DOM from CDN links -->
+		<script crossorigin src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
+		<script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+		<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+		<script src="js/index.js" type="text/babel"></script>
+	</body>
+</html>
