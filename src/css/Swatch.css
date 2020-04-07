@@ -1,0 +1,19 @@
+.swatch {
+  color: white;
+  background-color:rgb(0,0,0);
+  font-size: 1.5em;
+  text-align: center;
+  display: grid;
+  grid-gap: 0.25em;
+  grid-template-columns: 1fr 3em 3em 3em 1fr;
+  align-content: center;
+  text-shadow: 0 0 2px #000;
+}
+.swatch > :first-child {
+  text-align: right;
+  align-self: center;
+}
+.swatch > :last-child {
+  text-align: left;
+  align-self: center;
+}
