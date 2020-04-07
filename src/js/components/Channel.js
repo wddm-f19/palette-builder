@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import 'css/Channel.css'
 
-const Channel = ({color}) => {
+const Channel = ({color, onRgbUpdate}) => {
 
 	console.log(`RENDERED THE CHANNEL COMPONENT`)
 
@@ -9,11 +9,18 @@ const Channel = ({color}) => {
 	// DEFINING AND UPDATING STATE VARIABLES
 
 	// Taking the value of color, assigning to a state variable named: rgb
-	let [rgb, setRgb] = useState(color)
+	//let [rgb, setRgb] = useState(color)
+	let rgb = color
 
 
 	const updateValue = (value) => {
-		setRgb(value)
+		// setRgb(value)
+		if (value > 255)
+			value = 255
+		else if (value < 0 || !value)
+			value = 0
+
+		onRgbUpdate(value)  // setR(value), or setG(value), or setB(value)
 	}
 
 
